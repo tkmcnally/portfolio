@@ -1,0 +1,32 @@
+@(message: String, n: Integer)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+        <title>ADDY <3</title>
+
+            <!-- CSS -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/bootstrap.min.css")">
+    </head>
+
+    <body id="page-top" class="index">
+        <div class="container">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="@routes.Assets.at("img/"+ n + ".png")" alt="">
+                <h1>"@message" - Adam Fulton</h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </body>
+
+
+</html>
+

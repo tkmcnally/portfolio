@@ -1,0 +1,240 @@
+@(message: String)
+
+@main(message) {
+    <header class="header_blur">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="@routes.Assets.at("img/profile.png")" alt="">
+                    <div class="intro-text">
+                        <span class="name">Thomas McNally</span>
+                        <hr class="star-light">
+                        <span class="skills">Software Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                    <p> Most of my side-projects stem from mobile development. I have worked with AndEngine, LibGDX and the native Android framework.
+                        In dealing with web applications, my experience lies in Spring and the Play! frameworks.<br><br> </p>
+                </div>
+            </div>
+
+            <div class="row center-block">
+                <div class="col-sm-12 centered portfolio-item">
+                    <a href="http://quizter.tkmcnally.com" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+
+                        <img src="@routes.Assets.at("img/quizter_cover.png")" class="img-responsive" alt="" />
+
+                    </a>
+                    <div align="center">
+                    <a href="https://play.google.com/store/apps/details?id=com.tkmcnally.quizter">
+                        <img alt="Get it on Google Play"
+                        src="@routes.Assets.at("img/en_generic_rgb_wo_45.png")" />
+                    </a>
+                        </div>
+                    <h4 align="center">Quizter - Android Application</h4>
+                </div>
+            </div>
+            <div class="row center-block">
+                <div class="col-sm-12 centered portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="@routes.Assets.at("img/anagram_cover.png")" class="img-responsive" alt="" />
+                    </a>
+                    <h4 align="center">Anagram Solver - (Under Development)</h4>
+                </div>
+            </div>
+            <div class="row center-block">
+                <div class="col-sm-12 centered portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="@routes.Assets.at("img/apple_cover.png")" class="img-responsive" alt="" />
+                    </a>
+                    <h4 align="center">Defend The Apple</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Who am I?</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p>I'm a 21 year-old Software Developer who recently graduated with a Bachelor of Computer Science (Honours) at Carleton University. I have a deep-seated passion for programming which motivates me to start new side projects all the time, learn new things everyday and keep up with the latest technologies.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                        <p align="center"><a href="mailto:tk.mcnally@@gmail.com" target="_top">tk.mcnally@@gmail.com</a></p>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Anagram Solver</h2>
+                            <hr class="star-primary">
+                            <img src="@routes.Assets.at("img/anagram_cover.png")" class="img-responsive img-centered    " alt="" width="64" height="64" />
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="@routes.Assets.at("img/ana1.png")" class="img-responsive img-centered" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="@routes.Assets.at("img/ana2.png")" class="img-responsive img-centered" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="@routes.Assets.at("img/ana3.png")" class="img-responsive img-centered" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="@routes.Assets.at("img/ana4.png")" class="img-responsive img-centered" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="@routes.Assets.at("img/ana5.png")" class="img-responsive img-centered" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="@routes.Assets.at("img/ana6.png")" class="img-responsive img-centered" alt="">
+                                    </div>
+                                </div>
+
+                            <p>'Anagram Solver' is an application used to automatically create all possible word-game 'legal' anagrams for a given input. This application is useful for games like Scrabble, Words with Friends, etc...
+                                <br><br>The result set of possible anagrams are sorted alphabetically and by size. To view the definition of a given word, you simply click it and the definition is retrieved from a third party webservice.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Date: <strong>Present</strong>
+                                </li>
+                                <li>Area: <strong>Android Development</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Defend the Apple</h2>
+                            <hr class="star-primary">
+                            <img src="@routes.Assets.at("img/apple_cover.png")" class="img-responsive img-centered    " alt="" width="64" height="64" />
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="@routes.Assets.at("img/dta1.png")" class="img-responsive img-centered" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="@routes.Assets.at("img/dta2.png")" class="img-responsive img-centered" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="@routes.Assets.at("img/dta3.png")" class="img-responsive img-centered" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="@routes.Assets.at("img/dta4.png")" class="img-responsive img-centered" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="@routes.Assets.at("img/dta5.png")" class="img-responsive img-centered" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="@routes.Assets.at("img/dta6.png")" class="img-responsive img-centered" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <img src="@routes.Assets.at("img/dta7.png")" class="img-responsive img-centered" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="@routes.Assets.at("img/dta8.png")" class="img-responsive img-centered" alt="">
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+
+                            <p>
+                                Defend the Apple is marathon-based game, where the player must tap-to-kill as many flies on screen as possible before the Apple has been eaten.
+                                    <br> <br>
+                                    The player earns varying scores for swatting different types of enemies and is awarded bonus score at the end based on their time survived and accuracy achieved.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Date: <strong>November, 2010</strong>
+                                </li>
+                                <li>Area: <strong>Android Development</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
