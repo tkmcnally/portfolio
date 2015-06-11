@@ -12,7 +12,7 @@ public class Global extends GlobalSettings {
 
     public Promise<SimpleResult> onError(RequestHeader request, Throwable t) {
         return Promise.<SimpleResult>pure(internalServerError(
-                pageNotFound.render("" )
+                pageNotFound.render("")
         ));
     }
 

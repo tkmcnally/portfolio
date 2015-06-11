@@ -15,20 +15,4 @@ public class Index extends Controller {
 
         return ok(views.html.index.render("Thomas McNally | Software Developer"));
     }
-
-
-
-    public static Result birthday() {
-
-        Random r = new Random();
-
-        int quoteRand = r.nextInt(5) + 1;
-        int pictureRand = r.nextInt(5) + 1;
-
-        String quote = Play.application().configuration().getString(quoteRand + "");
-
-
-
-        return ok(views.html.adam.render(quote, pictureRand));
-    }
 }
